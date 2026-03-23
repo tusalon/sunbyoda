@@ -1,22 +1,22 @@
-// sw.js - Service Worker para Rosy Nails
+// sw.js - Service Worker para Sun by Oda
 
-const CACHE_NAME = 'rosy-nails-v1';
+const CACHE_NAME = 'sun-by-oda-v1';
 const urlsToCache = [
-  '/rosy-nails/',
-  '/rosy-nails/index.html',
-  '/rosy-nails/admin.html',
-  '/rosy-nails/admin-login.html',
-  '/rosy-nails/setup-wizard.html',
-  '/rosy-nails/editar-negocio.html',
-  '/rosy-nails/manifest.json',
-  '/rosy-nails/icons/icon-72x72.png',
-  '/rosy-nails/icons/icon-96x96.png',
-  '/rosy-nails/icons/icon-128x128.png',
-  '/rosy-nails/icons/icon-144x144.png',
-  '/rosy-nails/icons/icon-152x152.png',
-  '/rosy-nails/icons/icon-192x192.png',
-  '/rosy-nails/icons/icon-384x384.png',
-  '/rosy-nails/icons/icon-512x512.png'
+  '/sun-by-oda/',
+  '/sun-by-oda/index.html',
+  '/sun-by-oda/admin.html',
+  '/sun-by-oda/admin-login.html',
+  '/sun-by-oda/setup-wizard.html',
+  '/sun-by-oda/editar-negocio.html',
+  '/sun-by-oda/manifest.json',
+  '/sun-by-oda/icons/icon-72x72.png',
+  '/sun-by-oda/icons/icon-96x96.png',
+  '/sun-by-oda/icons/icon-128x128.png',
+  '/sun-by-oda/icons/icon-144x144.png',
+  '/sun-by-oda/icons/icon-152x152.png',
+  '/sun-by-oda/icons/icon-192x192.png',
+  '/sun-by-oda/icons/icon-384x384.png',
+  '/sun-by-oda/icons/icon-512x512.png'
 ];
 
 // ============================================
@@ -108,7 +108,7 @@ self.addEventListener('fetch', event => {
           }
           // Si no hay cache y es imagen, devolver icon por defecto
           if (event.request.url.match(/\.(jpg|jpeg|png|gif|svg|webp)$/)) {
-            return caches.match('/rosy-nails/icons/icon-192x192.png');
+            return caches.match('/sun-by-oda/icons/icon-192x192.png');
           }
           return new Response('Error de red', { status: 408 });
         });
@@ -138,6 +138,6 @@ self.addEventListener('message', event => {
   }
 });
 
-console.log('✅ Service Worker configurado para Rosy Nails');
+console.log('✅ Service Worker configurado para Sun by Oda');
 console.log('📦 Cache:', CACHE_NAME);
 console.log('📄 Archivos a cachear:', urlsToCache.length);

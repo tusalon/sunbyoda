@@ -1,20 +1,20 @@
 {
-  "name": "Rosy Nails",
-  "short_name": "Rosy",
+  "name": "Sun by Oda",
+  "short_name": "Sun",
   "description": "Uñas y belleza - Tu espacio de cuidado personal",
-  "start_url": "/rosy-nails/",
-  "scope": "/rosy-nails/",
+  "start_url": "/sun-by-oda/",
+  "scope": "/sun-by-oda/",
   "display": "standalone",
   "background_color": "#ec4899",
   "theme_color": "#ec4899",
   "icons": [
     {
-      "src": "/rosy-nails/icons/icon-192x192.png",
+      "src": "/sun-by-oda/icons/icon-192x192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/rosy-nails/icons/icon-512x512.png",
+      "src": "/sun-by-oda/icons/icon-512x512.png",
       "sizes": "512x512",
       "type": "image/png"
     }
