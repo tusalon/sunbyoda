@@ -1,0 +1,22 @@
+{
+  "name": "Rosy Nails",
+  "short_name": "Rosy",
+  "description": "Uñas y belleza - Tu espacio de cuidado personal",
+  "start_url": "/rosy-nails/",
+  "scope": "/rosy-nails/",
+  "display": "standalone",
+  "background_color": "#ec4899",
+  "theme_color": "#ec4899",
+  "icons": [
+    {
+      "src": "/rosy-nails/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/rosy-nails/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
